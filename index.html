@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<meta charset="utf-8">
+		<title>图库网</title>
+
+		<style type="text/css">
+			ul{
+				
+				list-style-type:none;
+			}
+			li{
+				list-style-type:none;
+				
+			}
+				#tk{
+					font-family:"wingdings 3";
+					font-size: 100px;
+					
+					background-image:-webkit-linear-gradient(#ff0000,#fd8403,#fdff4f,#ffffff); 
+					-webkit-background-clip:text; 
+					   -webkit-text-fill-color:transparent; 
+				}
+				a:link,a:visited{
+				 text-decoration:none;  /*超链接无下划线*/
+				
+				
+				}
+				
+				a:hover{
+					text-decoration: none;/*没有下划线*/
+					
+				}
+				
+				*{
+					/* *全局 */
+				    margin:0;padding:0;
+					/* 头顶白条去除 */
+				
+				}
+			body{
+				
+				background-image: linear-gradient( to top,  #acb2ff, #ffc0e1 ,#ff8d0a, #7ee3ff)
+				
+			}
+			#tou{
+				
+				ackground-color: bisque;
+				
+				
+			}
+			
+			#ding{
+				width: 100%;
+				background-image: linear-gradient( to top,#ff5852,#85c4ff); 
+				text-align: center;
+				
+				}
+				
+			#cheb{
+				
+						z-index:10;
+						margin: 0px;background-image: linear-gradient( to left, #ff5852,#85c4ff);
+						height: 175px; 
+						
+						
+						position:fixed;
+						
+						top: 31%;
+					}
+					
+				.cheb2{
+					
+							z-index:10;
+							margin: 0px;
+							background-image: linear-gradient( to left, );
+							height: 300px; 
+							position:fixed;
+							float: left;
+						margin-top:0px;
+							
+							width: 100%;
+							
+						}
+							
+				
+					
+				
+			#tp{
+				 width: 100%;
+				 vertical-align: middle;
+			}
+			
+			#root {
+			     margin: 0 auto;
+				 /* 图片放大尺寸 */
+			     width: 87%;
+				 /* 拍数 */
+			     column-count: 6;
+			     column-width: 200px;
+				 /* 左右下间距 */
+			     column-gap: 10px;
+			
+					}
+					.item {
+						/* 上下间距 */
+					     margin-bottom: 10px;
+					     /* 防止多列布局，分页媒体和多区域上下文中的意外中断 */
+					     break-inside: avoid;
+						 /* 设置透明 */
+					     background:rgba(0,0,0,0);
+					}
+		            .item img { width: auto;}
+		            
+					#anniu{
+						color: #00FFFF;
+						font-size: 20px
+						
+						
+					}
+					.box1{
+					    	     height:40px;
+					    		 display:flex;
+					             justify-content:space-between;
+					    		 align-items:center;
+					    		 background:rgba(0,0,0,0);
+					    	 }
+					
+					.line{
+					    	     height:3px;
+					    		 background-color:#ffffff;
+					    		 flex-grow:1;
+					    	 }
+					.text{
+									 font-size: 20px;
+					        	     top:0;
+					        		 color:#000000;
+					                 transform:translateY(-8PX);
+					        	 }	
+					.chebian{
+						width: 100%;
+						font-size: 30px;
+						font-family: "mv boli";
+							color: #55ffff;
+						
+						
+						
+					}
+					.chebian:hover{
+						
+						color: #004eeb;
+						
+					}
+					
+					
+		            .qwe{
+						background-image: linear-gradient( to top,#f2ffff,#c0f5ff);
+						 font-size: 20px;
+							text-align: center;
+							
+							
+							
+					}
+					.qws{
+						
+						background-image:-webkit-linear-gradient(#000041,#a1a1a1,#787f7f,#000000);
+						-webkit-background-clip:text; 
+						  -webkit-text-fill-color:transparent; 
+					}
+					.qws:hover{
+						cursor: no-drop;
+					}
+					.tubiao{
+						color: #00ff00 ;
+					}
+					.tubiao:hover{
+						color: #aaffff ;
+					}
+					
+					.tubiao2{
+						color: #3a78ff ;
+					}
+					.tubiao2:hover{
+						color: #b0d7ff ;
+					}
+					.tubiao3{
+						color: #ff0000 ;
+					}
+					.tubiao3:hover{
+						color: #82ff79 ;
+					}
+					.tubiao4{
+						color: #0efbff ;
+					}
+					.tubiao4:hover{
+						color: #ffffff ;
+					}
+					
+					.container {
+					padding-left: 39.4%;	
+					margin: 0 auto;
+					width: 100%;
+					text-align: center;
+					font-size: 20px;
+					background-image: linear-gradient( to top,#f2ffff,#c0f5ff);
+					}
+								
+					
+					.nav {
+					list-style:none
+					width: 100%;
+					height: 40px;
+					line-height: 40px;
+					background-image: linear-gradient( to top,#8b5f60,#c0f5ff);
+					}
+					
+					
+					/*一级菜单*/ /*该选择器会选择 所有li*/
+					.nav li {
+						
+					float:  left;
+					position: relative;
+					
+					}
+					
+					
+					/*一级菜单*/
+					.nav li a {
+						
+					/*因为a是内联元素*/
+					
+					display: block;
+					width: 100px;
+					text-align: center;
+					
+					color: #ffffff;
+					text-decoration: none;
+					}
+					
+					/*二级菜单*/
+					.nav li ul li a {
+					color: #333;
+					
+					}
+					.nav li ul li {
+					/*覆盖前面设置 */
+					float: none;
+					
+					}
+					.nav li ul {
+						
+					border-top: none;
+					background:#f0efcc;
+					/*二级菜单先隐藏*/
+					display: none;
+					
+					/*绝对定位*/
+					position: absolute;
+					
+					
+					}
+					
+					
+					/*划过那个li 哪个li就变红*/
+					.nav li:hover {
+					background:#cab0c2;
+					}
+					.nav li:hover ul{
+					display: block;
+					
+					}
+					
+					
+					
+					
+			
+			</style>
+		</head>
+		
+	</head>
+	<body >
+		<audio  id="play"> asdaaaaaaaa</audio>
+	 <div id="tou"  >
+		
+	 		<div id="ding" >
+				<a name="ding"></a>
+				<br/>
+					<p id="tk">图&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;库</p >
+					
+	 			  <div    align="center" style="font-size: 30px;  float: inline-end;margin-top: 10px; ">
+				
+						<a  class="tubiao" href="https://www.twitch.tv/">
+						<i class="fa fa-twitch" aria-hidden="true"></i>
+						</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						
+					
+						<a  class="tubiao2" href="https://twitter.com/">
+						<i   class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+			
+			
+						<a class="tubiao3" href="https://www.instagram.com/">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						
+						<a  class="tubiao4" href="https://www.facebook.com/">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+				
+		<div  id="cheb1"  class="cheb2">
+		        <div class="nav">
+		        	<div class="container">
+		        	<ul >
+		        	<li>
+		        	<a  href="../网站1/index.html">欧洲</a>
+		        		<ul>
+		        		<li><a href="../网站1/index.html#faguo">法国</a></li>
+		        		<li><a href="../网站1/index.html#yingguo">英国</a></li>
+		        		<li><a href="../网站1/index.html#putaoya">西班牙</a></li>
+		        		<li><a href="../网站1/index.html#ydl">意大利</a></li>
+		        		</ul>
+		        	</li>
+		        	<li>
+		        	<a  href="../网站2/index.html">亚洲</a>
+		        		<ul>
+		        		<li><a href="../网站2/index.html#zg">中国</a></li>
+		        		<li><a href="../网站2/index.html#rben">日本</a></li>
+		        		<li><a href="../网站2/index.html#hg">韩国</a></li>
+		        		<li><a href="../网站2/index.html#yd">印度</a></li>
+		        		</ul>
+		        	</li>
+		        	
+					
+		        	<li>
+		        	<a  href="../网站3/index.html">美洲</a>
+		        		<ul>
+		        		<li><a href="../网站3/index.html#meiguo">美国</a></li>
+		        		<li><a href="../网站3/index.html#jnd">加拿大</a></li>
+		        		<li><a href="../网站3/index.html#mxg">墨西哥</a></li>
+		        		<li><a href="../网站3/index.html#bx">巴西</a></li>
+		        		</ul>
+		        	</li>
+		        	<li>
+		        	<a href="../网站4/index.html" >非洲</a>
+		        		<ul>
+		        		<li><a href="../网站4/index.html#aj">埃及</a></li>
+		        		<li><a href="../网站4/index.html#nf">南非</a></li>
+		        		
+		        		</ul>
+		        	</li>
+		        </ul>
+		        </div>
+		        	</div>
+				</div>	
+		<div  id="cheb" >
+				
+			<a  href="#ding">
+				<p   class="chebian">首页</p>
+			</a>
+			<br />
+			<a  href="sm.html">
+				<p  class="chebian">声明</p>
+			</a>
+			<br />
+			<a  href="#di">
+				<p  class="chebian">底部</p>
+			</a>	
+			
+		</div>
+		<br />
+	
+
+
+
+<!-- 美国 -->
+<a name="meiguo"></a>
+<br /><br /><br />
+	<div id="mg" class="box1">
+	         <span class="line"></span>
+			 <span class="text">A&nbsp;m&nbsp;e&nbsp;r&nbsp;i&nbsp;c&nbsp;a&nbsp;n</span>
+			 <span class="line"></span>
+	 </div>
+	<div id="root">
+	    		 		
+	    		 	<div class="item">
+	    		 				<a href="美国/1%20(1).jpg">
+	    		 					<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(1).jpg"/>
+	    		 				</a>
+	    		 		</div>
+	    		 
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(2).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(2).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(3).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(3).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(4).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(4).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(5).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(5).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(6).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(6).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(7).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(7).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(8).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(8).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(9).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(9).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(10).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(10).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(11).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(11).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(12).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(12).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(13).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(13).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(14).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(14).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(15).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(15).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(16).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(16).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(17).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(17).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(18).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(18).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(19).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(19).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(20).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(20).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(21).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(21).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(22).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(22).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(23).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(23).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(24).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(24).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(25).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(25).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(26).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(26).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(27).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(27).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(28).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(28).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(29).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(29).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(30).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(30).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(31).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(31).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(32).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(32).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(33).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(33).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(34).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(34).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(35).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(35).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(36).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(36).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(37).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(37).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(38).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(38).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(39).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(39).jpg"/>
+	    		 			</a>
+	    		 	</div>
+	    		 	<div class="item">
+	    		 			<a href="美国/1%20(40).jpg">
+	    		 				<img  id="tp" src="jiaz.jpg" data-original="美国1/1-(40).jpg"/>
+	    		 			</a>
+	    		 	</div>
+				
+	    		 </div>
+
+<!-- 加拿大 -->
+
+<a name="jnd"></a>
+<br /><br /><br />
+
+	<div id="jnd" class="box1">
+	         <span class="line"></span>
+			 <span class="text">C&nbsp;a&nbsp;n&nbsp;a&nbsp;d&nbsp;a</span>
+			 <span class="line"></span>
+	 </div>
+ <div id="root">
+    		 		
+    		 	<div class="item">
+    		 				<a href="加拿大/1%20(1).jpg">
+    		 					<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(1).jpg"/>
+    		 				</a>
+    		 		</div>
+    		 
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(2).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(2).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(3).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(3).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(4).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(4).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(5).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(5).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(6).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(6).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(7).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(7).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(8).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(8).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(9).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(9).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(10).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(10).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(11).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(11).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(12).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(12).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(13).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(13).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(14).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(14).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(15).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(15).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(16).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(16).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(17).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(17).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(18).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(18).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(19).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(19).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(20).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(20).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(21).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(21).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(22).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(22).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(23).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(23).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(24).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(24).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(25).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(25).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(26).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(26).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(27).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(27).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(28).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(28).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(29).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(29).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(30).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(30).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(31).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(31).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(32).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(32).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(33).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(33).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(34).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(34).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(35).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(35).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(36).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(36).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(37).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(37).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(38).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(38).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(39).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(39).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="加拿大/1%20(40).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="加拿大1/1-(40).jpg"/>
+    		 			</a>
+    		 	</div>
+				
+				
+    		 </div>
+
+
+<!-- 墨西哥 -->
+<a name="mxg"></a>
+<br /><br /><br />
+
+	<div id="mxg" class="box1">
+	         <span class="line"></span>
+			 <span class="text">M&nbsp;e&nbsp;x&nbsp;i&nbsp;c&nbsp;o</span>
+			 <span class="line"></span>
+	 </div>
+ <div id="root">
+    		 		
+    		 	<div class="item">
+    		 				<a href="墨西哥/1%20(1).jpg">
+    		 					<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(1).jpg"/>
+    		 				</a>
+    		 		</div>
+    		 
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(2).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(2).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(3).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(3).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(4).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(4).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(5).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(5).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(6).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(6).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(7).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(7).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(8).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(8).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(9).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(9).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(10).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(10).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(11).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(11).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(12).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(12).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(13).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(13).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(14).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(14).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(15).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(15).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(16).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(16).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(17).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(17).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(18).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(18).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(19).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(19).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(20).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(20).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(21).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(21).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(22).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(22).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(23).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(23).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(24).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(24).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(25).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(25).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(26).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(26).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(27).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(27).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(28).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(28).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(29).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(29).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(30).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(30).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(31).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(31).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(32).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(32).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(33).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(33).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(34).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(34).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(35).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(35).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(36).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(36).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(37).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(37).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(38).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(38).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(39).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(39).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="墨西哥/1%20(40).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="墨西哥1/1-(40).jpg"/>
+    		 			</a>
+    		 	</div>
+				
+				
+				
+    		 </div>
+
+
+<!-- 巴西 -->
+<a name="bx"></a>
+<br /><br /><br />
+
+	<div id="bx" class="box1">
+	         <span class="line"></span>
+			 <span class="text">B&nbsp;r&nbsp;a&nbsp;z&nbsp;i&nbsp;l</span>
+			 <span class="line"></span>
+	 </div>
+ <div id="root">
+    		 		
+    		 	<div class="item">
+    		 				<a href="巴西/1%20(1).jpg">
+    		 					<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(1).jpg"/>
+    		 				</a>
+    		 		</div>
+    		 
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(2).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(2).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(3).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(3).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(4).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(4).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(5).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(5).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(6).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(6).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(7).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(7).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(8).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(8).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(9).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(9).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(10).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(10).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(11).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(11).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(12).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(12).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(13).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(13).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(14).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(14).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(15).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(15).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(16).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(16).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(17).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(17).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(18).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(18).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(19).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(19).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(20).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(20).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(21).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(21).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(22).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(22).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(23).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(23).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(24).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(24).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(25).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(25).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(26).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(26).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(27).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(27).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(28).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(28).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(29).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(29).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(30).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(30).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(31).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(31).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(32).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(32).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(33).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(33).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(34).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(34).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(35).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(35).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(36).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(36).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(37).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(37).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(38).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(38).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(39).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(39).jpg"/>
+    		 			</a>
+    		 	</div>
+    		 	<div class="item">
+    		 			<a href="巴西/1%20(40).jpg">
+    		 				<img  id="tp" src="jiaz.jpg" data-original="巴西1/1-(40).jpg"/>
+    		 			</a>
+    		 	</div>
+				
+				
+			
+				
+    		 </div>
+
+<a name="di"></a>
+	<div  id="ding" >
+		<p id="tk"><ul type="none">
+		<br />
+			<li style="font-size: 50px;">
+				<a class="tubiao" href="https://www.twitch.tv/">
+				<i class="fa fa-twitch" aria-hidden="true"></i>
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+				<a class="tubiao2" href="https://twitter.com/">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<a class="tubiao3" href="https://www.instagram.com/">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<a class="tubiao4" href="https://www.facebook.com/">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+				</a>
+			</li>
+			<br />
+		</ul>
+		</p>
+	</div>
+	</body>
+	<script type="text/javascript">
+	
+	var aImages = document.images;
+	
+	window.onload = init();
+	function init(){
+		
+		
+		 window.setInterval(changeImg,500)
+		  window.setInterval(changeImg1,50)
+		
+		// console.log("滑轮");  
+		}
+	
+function changeImg1(){
+	var gdt=window.document.documentElement.scrollTop;
+
+	var dt=cheb1.getBoundingClientRect().top
+				if(gdt=>200){
+					var ch= document.getElementById("cheb1")
+						ch.style.top=0+"px";
+						}
+				if(gdt<200){
+					
+					var ch= document.getElementById("cheb1")
+						ch.style.top=200+"px";
+						}
+	}
+	
+	function changeImg(){
+		
+				//滚动条离页面最上方的距离
+		var gdt=window.document.documentElement.scrollTop;
+		
+		var mg1=mg.getBoundingClientRect().top;
+		var jnd1=jnd.getBoundingClientRect().top;
+		var mxg1=mxg.getBoundingClientRect().top;
+		var bx1=bx.getBoundingClientRect().top;
+	
+		 // 美国开始
+		if (gdt>=0 && jnd1>1 ){
+			 loadImg(aImages,0) 
+		}
+		 // 加拿大开始
+		 if (jnd1<1&& mxg1>1){
+		 	 loadImg(aImages,40) 
+		 }  
+		 // 墨西哥开始
+		 if (mxg1<1&& bx1>1){
+		 	 loadImg(aImages,80) 
+		 }  
+		 // 巴西开始
+		 if (bx1<1){
+		 	 loadImg(aImages,120) 
+		 }  
+		 
+		
+		 }  
+		 
+		  
+		     
+		
+	
+	
+	function loadImg(arr,a){
+	    for( var i = a,len = arr.length; i < len; i++){
+	        if(arr[i].getBoundingClientRect().top < document.documentElement.clientHeight && !arr[i].isLoad){
+	            arr[i].isLoad = true;
+	            arr[i].style.cssText = "transition: ''; opacity: 0;"
+	            if(arr[i].dataset){
+	                aftLoadImg(arr[i],arr[i].dataset.original);
+	            }else{
+	                aftLoadImg(arr[i],arr[i].getAttribute("data-original"));
+	            }
+	            (function(i){
+	                setTimeout(function(){
+	                    arr[i].style.cssText = "transition: 1s; opacity: 1;"
+	                },16)
+	            })(i);
+	        }
+	    }
+	} 
+	function aftLoadImg(obj,url){
+	    var oImg = new Image();
+	    oImg.onload = function(){
+	        obj.src = oImg.src;
+	    }
+	    oImg.src = url;
+	}
+	
+	</script>
+</html>
